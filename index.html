@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="logo">S<span>afn</span>a</a>
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+   
+    <div id ="header">
+        <div class="container">
+            
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h2>Hello... Iam  Fathima Safna <br> From Sri Lanka</h2>
+            </div>
+        </div>
+    </div>
+
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="About-col-1">
+                <h1 class="sub-title">About<span> Me</span></h1>
+                <p class="About-sub"> I'm an undergraduate following the Bachelor of Science in Management and Information Technology programme at South Eastern University of Sri Lanka. I'm looking for an entry-level employment where I can pick up knowledge from experienced professionals, offer my enthusiasm, and have a real impact.
+                </p>
+            </div>
+                
+                <div class="About-col-2">
+                <img src="./image/saf.jpeg">
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="Portfolio">
+        <div class="container">
+            <div class="row">
+                <center><h1 class="sub-title">My<span> Works </span></h1></center>
+
+                <div class="Work-list">
+                    <div class="work">
+                        <img src="./image/work-1.PNG">
+                        <div class="layer">
+                            <h3>Online Coffe Ordering System</h3>
+                            <p>this Web help the customer to order the coffee</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./image/work-2.PNG">
+                        <div class="layer">
+                        <h3>Online Vegitables Ordering System</h3>
+                            <p>this Web help the customer to order the Vegitables</p>
+                    </div>
+                </div>
+                    <div class="work">
+                        <img src="./image/work-3.PNG">
+                        <div class="layer">
+                        <h3>facebook Signup page</h3>
+                            <p>this Signup page help the users to Signup to the page</p>
+                    </div>
+                </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="Contact-left">
+                <h1 class="sub-title">Contact <span> Me</span></h1>
+                <p>ssafna406@gmail.com</p>
+                <p>0764928111</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="./image/safna_CV.pdf" Download class="btn btn2">Download Cv</a>
+            </div>
+            
+                
+                <div class="Contact-right">
+               <form>
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Your email" required>
+                <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+               </form>
+            </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>Copyrigt: 2024 and Developed by Fathima Safna <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html>
